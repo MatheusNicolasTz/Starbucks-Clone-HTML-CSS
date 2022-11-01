@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <title>Starbucks - Home</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#" class="select">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="box-header">
+            <div class="textBox">
+                    <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam minus fugiat incidunt accusamus enim. Amet suscipit voluptates dolore quidem provident iste illum officia quis eaque, minus consectetur porro nulla non?</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="/img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/img/thumb1.png" alt="Sabor-1" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="/img/thumb2.png" alt="Sabor-2" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="/img/thumb3.png" alt="Sabor-3" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    </section>
+
+    <main>
+        <div class="box-main-1">
+            <div class="cont-1">
+                <h2>Voltando ao que<br><span>amamos juntos</span></h2>
+                <p>Queridos clientes, partners e amigos, estamos acompanhando a situação atual do Brasil em relação ao COVID-19, focados na segurança e bem estar dos nossos partners (como chamamos os nossos colaboradores) e clientes. Seguimos os critérios de quarentena de cada munícipo que temos lojas. As lojas abertas ou com entrega via delivery, através do nosso parceiro Rappi, estão seguindo as orientações das autoridades de saúde.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgMain-1">
+                <img src="https://starbucks.com.br/public/img/home/sb-dia-do-fotografo.jpg" class="starbucks-1">
+            </div>
+        </div>
+        <div class="box-main-2">
+            <div class="imgMain-2">
+                <img src="https://starbucks.com.br/public/img/home/featured-drinks.jpg" class="starbucks-2">
+            </div>
+            <div class="cont-2">
+                <h2>Saboreie uma pausa</h2>
+                <p>Saboreie uma pausa com uma de nossas bebidas</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="box-main-3">
+            <div class="cont-3">
+                <h2>Esperança e união</h2>
+                <p>Em parceria com ONGs, Partners da Starbucks se mobilizam para entregar café às comunidades.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgMain-3">
+                <div class="background"></div>
+                <img src="https://starbucks.com.br/public/img/home/donate.jpg" class="starbucks-3">
+            </div>
+        </div>
+        <div class="box-main-4">
+            <div class="imgMain-4">
+                <img src="https://starbucks.com.br/public/img/home/partners.jpg" class="starbucks-4">
+            </div>
+            <div class="cont-4">
+                <h2>Coisas boas estão acontecendo</h2>
+                <p>Um gesto de carinho àqueles que estão na linha de frente todos os dias.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <hr style="border: 1px solid rgb(230, 230, 230);">
+
+    <footer>
+        <div class="box-footer-1">
+            <ul class="text-footer-1">
+                <li><a href="">Política de privacidade</a></li>
+                <hr>
+                <li><a href="">Política de troca de produto</a></li>
+                <hr>
+                <li><a href="">Termos de uso</a></li>
+                <hr>
+                <li><a href="">Política de Cookies</a></li>
+            </ul>
+            <li>
+                <a href="" class="re-1">© 2022 Starbucks Coffee Company. Todos os direitos reservados.</a>
+            </li>
+            <a href="" class="footerImg">
+                <img src="https://starbucks.com.br/public/img/icons/sb-historias-logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
